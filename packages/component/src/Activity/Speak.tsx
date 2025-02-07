@@ -45,8 +45,19 @@ const Speak: FC<SpeakProps> = ({ activity }) => {
     //     </voice>
     //   </speak>`;
 
+    let res = speak;
+    if (!speak) {
+      res =  `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
+      <voice name="en-US-ChristopherNeural">
+        <prosody rate="0%" pitch="0%">
+          ${text}
+        </prosody>
+      </voice>
+    </speak>`;
+    }
+
     return [
-      speak || text,
+      res,
       ...attachments
         .filter(({ contentType }) => contentType === 'application/vnd.microsoft.card.adaptive')
         .map(attachment => attachment?.content?.speak)
