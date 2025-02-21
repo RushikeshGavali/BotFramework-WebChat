@@ -115,6 +115,7 @@
   "TEXT_INPUT_PLACEHOLDER": "Type your message",
   "TEXT_INPUT_SEND_BUTTON_ALT": "Send",
   "TEXT_INPUT_SPEAK_BUTTON_ALT": "Speak",
+  "KEYBOARD_BUTTON_ALT": "Keyboard",
   "TEXT_INPUT_UPLOAD_BUTTON_ALT": "Upload file",
   "TEXT_INPUT_TELEPHONE_KEYPAD_BUTTON_ALT": "Telephone keypad",
   "TEXT_INPUT_DROP_ZONE": "Drop files",

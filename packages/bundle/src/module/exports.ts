@@ -1,5 +1,6 @@
 import Composer from '../FullComposer';
 import ReactWebChat from '../FullReactWebChat';
+import ReactSpeechWebChat from '../FullReactSpeechWebChat';
 import AdaptiveCardContent from '../adaptiveCards/Attachment/AdaptiveCardContent';
 import AnimationCardContent from '../adaptiveCards/Attachment/AnimationCardContent';
 import AudioCardContent from '../adaptiveCards/Attachment/AudioCardContent';
@@ -111,6 +112,7 @@ export {
   createStyleSet,
   patchedHooks as hooks,
   ReactWebChat,
+  ReactSpeechWebChat,
   renderMarkdown,
   renderWebChat,
   withEmoji

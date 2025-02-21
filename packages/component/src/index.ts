@@ -2,6 +2,7 @@ import { hooks as apiHooks, concatMiddleware, localize } from 'botframework-webc
 import { type WebChatActivity } from 'botframework-webchat-core';
 
 import ReactWebChat, { ReactWebChatProps } from './ReactWebChat';
+import ReactSpeechWebChat, { type ReactSpeechWebChatProps } from './ReactSpeechWebChat/ReactSpeechWebChat';
 
 import Composer, { ComposerProps } from './Composer';
 
@@ -133,7 +134,8 @@ export {
   localize,
   testIds,
   version,
-  withEmoji
+  withEmoji,
+  ReactSpeechWebChat
 };
 
 export type {
@@ -144,5 +146,6 @@ export type {
   HTMLContentTransformMiddleware,
   HTMLContentTransformRequest,
   ReactWebChatProps,
-  WebChatActivity
+  WebChatActivity,
+  ReactSpeechWebChatProps
 };
