@@ -40,6 +40,7 @@ import getActivityLivestreamingMetadata from './utils/getActivityLivestreamingMe
 import getOrgSchemaMessage from './utils/getOrgSchemaMessage';
 import onErrorResumeNext from './utils/onErrorResumeNext';
 import singleToArray from './utils/singleToArray';
+import isVoiceActivity from './utils/voiceActivity/isVoiceActivity';
 
 export {
   isForbiddenPropertyName,
@@ -99,6 +100,7 @@ export {
   emitTypingIndicator,
   getActivityLivestreamingMetadata,
   getOrgSchemaMessage,
+  isVoiceActivity,
   markActivity,
   onErrorResumeNext,
   parseAction,
